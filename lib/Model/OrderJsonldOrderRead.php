@@ -74,7 +74,7 @@ class OrderJsonldOrderRead implements ModelInterface, ArrayAccess
 'deleted' => 'bool',
 'order_products' => '\VentureLeap\OrderService\Model\OrderProductJsonldOrderRead[]',
 'logs' => '\VentureLeap\OrderService\Model\OrderLogJsonldOrderRead[]',
-'additional_properties' => 'map[string,string]',
+'additional_properties' => 'object',
 'total_gross_amount' => 'float',
 'total_net_amount' => 'float',
 'total_vat_amount' => 'float'    ];
@@ -766,7 +766,7 @@ class OrderJsonldOrderRead implements ModelInterface, ArrayAccess
     /**
      * Gets additional_properties
      *
-     * @return map[string,string]
+     * @return object
      */
     public function getAdditionalProperties()
     {
@@ -776,7 +776,7 @@ class OrderJsonldOrderRead implements ModelInterface, ArrayAccess
     /**
      * Sets additional_properties
      *
-     * @param map[string,string] $additional_properties additional_properties
+     * @param object $additional_properties additional_properties
      *
      * @return $this
      */

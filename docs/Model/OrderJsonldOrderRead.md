@@ -21,7 +21,7 @@ Name | Type | Description | Notes
 **deleted** | **bool** |  | [optional] 
 **order_products** | [**\VentureLeap\OrderService\Model\OrderProductJsonldOrderRead[]**](OrderProductJsonldOrderRead.md) |  | [optional] 
 **logs** | [**\VentureLeap\OrderService\Model\OrderLogJsonldOrderRead[]**](OrderLogJsonldOrderRead.md) |  | [optional] 
-**additional_properties** | **map[string,string]** |  | [optional] 
+**additional_properties** | **object** |  | [optional] 
 **total_gross_amount** | **float** |  | [optional] 
 **total_net_amount** | **float** |  | [optional] 
 **total_vat_amount** | **float** |  | [optional] 
