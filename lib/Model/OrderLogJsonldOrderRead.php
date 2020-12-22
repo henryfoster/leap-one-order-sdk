@@ -61,8 +61,8 @@ class OrderLogJsonldOrderRead implements ModelInterface, ArrayAccess
 'type' => 'string',
 'created_at' => '\DateTime',
 'changed' => 'string',
-'old' => 'map[string,string]',
-'new' => 'map[string,string]'    ];
+'old' => 'string[]',
+'new' => 'string[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -355,7 +355,7 @@ class OrderLogJsonldOrderRead implements ModelInterface, ArrayAccess
     /**
      * Gets old
      *
-     * @return map[string,string]
+     * @return string[]
      */
     public function getOld()
     {
@@ -365,7 +365,7 @@ class OrderLogJsonldOrderRead implements ModelInterface, ArrayAccess
     /**
      * Sets old
      *
-     * @param map[string,string] $old old
+     * @param string[] $old old
      *
      * @return $this
      */
@@ -379,7 +379,7 @@ class OrderLogJsonldOrderRead implements ModelInterface, ArrayAccess
     /**
      * Gets new
      *
-     * @return map[string,string]
+     * @return string[]
      */
     public function getNew()
     {
@@ -389,7 +389,7 @@ class OrderLogJsonldOrderRead implements ModelInterface, ArrayAccess
     /**
      * Sets new
      *
-     * @param map[string,string] $new new
+     * @param string[] $new new
      *
      * @return $this
      */
